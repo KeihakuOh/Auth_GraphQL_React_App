@@ -13,9 +13,6 @@ const app = express();
 
 // Replace with your Mongo Atlas URI
 const MONGO_URI = '';
-if (!MONGO_URI) {
-  throw new Error('You must provide a Mongo Atlas URI');
-}
 
 // Mongoose's built in promise library is deprecated, replace it with ES2015 Promise
 mongoose.Promise = global.Promise;
